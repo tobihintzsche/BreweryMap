@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"></meta>
+        <link rel="stylesheet" href="style.css"> <!-- Hier wird das Stylesheet importiert, in welchem man viele vorgefertigte CSS-Eigenschaften, die man direkt benutzen kann-->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    </head> 
+
+    <body> 
+       <div> 
+                <!-- Die CSS-Eigenschaften der Folgenden Zeile stammen aus der Klasse style.css 
+                Diese bietet vorgefertigte Tailwind-CSS-Klassen, welche durch die Installation von Tailwind-CSS entstehen
+                text-center führ dazu, dass der Text zentriert ist; pb-8 steht für padding-bottom: 2rem; pt-8 steht für padding-top: 2rem  -->
+                <div class="text-center pb-8 pt-8">  
+                    <h1 class="text-xl font-sans text-blue">Brewery Map</h1>
+                    <p>Find your local Brewery!</p>
+                </div>  
+
+                <p class="text-center pb-2">Zoom out to discover other Breweries</p>
+                <div class="flex justify-center">
+                    <div id='map' class="shadow-2xl"  style='width: 800px; height: 500px'></div>
+                </div> 
+
+
+        </div>    
+        
+
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script> 
+        <script src="map.js"></script>
+        <script src="api_data.js"></script>  
+    
+    </body>
+</html>
